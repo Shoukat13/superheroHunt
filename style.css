@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 70%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #555;
+}
+
+#superheroList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero {
+  margin: 10px;
+  padding: 10px;
+  width: 100%; /* Make sure the hero div uses full width inside flex container */
+  max-width: 300px; /* Restrict the maximum width of cards */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for the card */
+.hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card image styles */
+.hero img {
+  width: 100%; /* Ensure the image covers the entire width of the card */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 8px 8px 0 0; /* Rounded corners for top of card */
+  margin-bottom: 10px; /* Add space between image and content */
+}
+
+/* Title inside the card */
+.hero h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Superhero list container */
+#superheroList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center align cards */
+  padding: 20px;
+}
+
+/* Card body styles */
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.favorite-btn {
+  display: block;
+  width: 100%; /* Full width button */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex: 1 1 100%; /* One card per row on small screens */
+  }
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 1.25rem; /* Font size for the card title */
+  margin-bottom: 10px; /* Margin below the title */
+}
+
+/* Button styles */
+.favorite-btn {
+  display: block; /* Block display for the button */
+  width: 100%; /* Full width button */
+  margin-top: 10px; /* Margin above the button */
+  text-align: center; /* Center align text inside the button */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex: 1 1 100%; /* One card per row on small screens */
+  }
+}
+/* Styles for Superhero Details Page */
+#heroName {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#heroImage {
+  width: 100%; /* Ensure the image covers the width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Set a maximum width to prevent the image from becoming too large */
+  border-radius: 8px; /* Add rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a polished look */
+  margin-bottom: 20px;
+}
+
+#heroDetails {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the details section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the details */
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Ensure the image stays inside the container and doesn't overflow */
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+  /* Make the hero image and details responsive for smaller screens */
+  #heroImage {
+    max-width: 100%;
+    width: auto;
+  }
+
+  #heroDetails {
+    padding: 15px;
+  }
+}
